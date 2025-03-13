@@ -1,0 +1,11 @@
+import math 
+x=0.5
+E=0.001
+y=0
+n=0 
+a=math.sin((2*n+1)*x)/math.factorial(2*n+1)
+while abs(a)>E:
+    y+=a 
+    n+=1 
+    a=math.sin((2*n+1)*x)/math.factorial(2*n+1)
+print(y)
